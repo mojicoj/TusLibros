@@ -8,10 +8,8 @@ public class Carrito {
     private int id;
     private List<Libro> libros;
 
-    public Carrito(Cliente cliente) throws Exception{
-        if (clienteValido(cliente)) {
-            this.libros = new ArrayList<>();
-        } else throw new Exception("El cliente no es valido");
+    public Carrito() {
+        this.libros = new ArrayList<>();
     }
 
     public int getId() {
@@ -30,7 +28,7 @@ public class Carrito {
         this.libros = libros;
     }
 
-    private boolean clienteValido(Cliente cliente){
+    private boolean clienteValido(Cliente cliente) {
         return true;
     }
 }

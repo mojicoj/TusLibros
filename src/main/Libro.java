@@ -5,6 +5,10 @@ public class Libro {
     private String isbn;
     private String titulo;
 
+    public Libro (String titulo){
+        this.titulo = titulo;
+    }
+
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
@@ -16,7 +20,6 @@ public class Libro {
     public String getIsbn() {
         return isbn;
     }
-
 
     public String getTitulo() {
         return titulo;
